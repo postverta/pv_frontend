@@ -1,0 +1,5 @@
+.pv-mainviewer-editor-container {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}

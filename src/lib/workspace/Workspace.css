@@ -1,0 +1,87 @@
+.pv-workspace {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+}
+
+.pv-navbar {
+  order: 1;
+  width: inherit;
+  flex: 0 0 content;
+}
+
+.pv-body {
+  order: 2;
+  width: 100%;
+  flex: 1 1 auto;
+  flex-flow: row;
+  display: flex;
+}
+
+.pv-leftbar {
+  order: 1;
+  flex: 0 0 auto;
+  height: inherit;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #2a3134;
+}
+
+.pv-leftbar-resizer {
+  order: 2;
+  height: inherit;
+  width: 10px;
+  margin-left: -5px;
+  margin-right: -5px;
+  flex: 0 0 auto;
+  cursor: ew-resize;
+  z-index: 1;
+}
+
+.pv-main {
+  order: 3;
+  height: inherit;
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #485358;
+}
+
+.pt-callout.pv-main-callout {
+  width: 100%;
+  flex: 0 0 auto;
+  border-radius: 0px;
+}
+
+.pv-main-viewer {
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+}
+
+.pv-log-container {
+  order: 2;
+  flex-flow: column;
+  z-index: 10;
+}
+
+.pv-log {
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.pv-log-resizer {
+  flex: 0 0 auto;
+  width: inherit;
+  height: 10px;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  cursor: ns-resize;
+  z-index: 1;
+}

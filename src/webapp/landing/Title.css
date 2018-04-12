@@ -1,0 +1,43 @@
+.pv-landing-title {
+  width: inherit;
+  flex: 0 0 auto;
+  background-color: #3b464b;
+  padding-top: 100px;
+  padding-bottom: 250px;
+}
+
+.pv-landing-title .pv-landing-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 980px;
+}
+
+.pv-landing-title-main {
+  font-size: 48px;
+  font-family: "sofia-pro";
+  font-weight: 200;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+.pv-landing-title-secondary {
+  font-size: 24px;
+  font-family: "sofia-pro";
+  color: rgba(255, 255, 255, 0.502);
+  margin-bottom: 20px;
+  max-width: 650px;
+  text-align: center;
+}
+
+.pt-button.pv-landing-try-button {
+  margin-top:10px;
+  padding: 0 30px;
+}
+
+.pv-landing-title-getstarted {
+  margin-top: 20px;
+  background-color: white;
+  border: 1px solid #CED9E0;
+  padding: 20px;
+}

@@ -1,0 +1,47 @@
+.pv-landing {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.pv-landing-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.pv-landing-navbar {
+  width: inherit;
+  flex: 0 0 auto;
+  height: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pv-landing-navbar-postverta {
+  height: 44px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.pv-landing-navbar-avatar {
+  height: 44px;
+  width: 44px;
+  padding: 4px;
+  overflow: hidden;
+}
+
+.pv-landing-navbar-avatar img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pt-button.pv-landing-navbar-signin {
+  padding: 0px 40px;
+}

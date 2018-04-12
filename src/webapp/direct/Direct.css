@@ -1,0 +1,19 @@
+.pv-direct {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.pv-direct-container {
+  flex: 0 0 auto;
+  width: inherit;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.pv-direct-error {
+  color: #F55656;
+}

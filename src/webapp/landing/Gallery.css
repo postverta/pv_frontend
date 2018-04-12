@@ -1,0 +1,90 @@
+.pv-landing-gallery {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #fbfbfb;
+}
+
+.pv-landing-gallery .pv-landing-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.pv-landing-gallery-title {
+  text-align: center;
+  font-size: 36px;
+  font-family: "sofia-pro";
+  font-weight: 300;
+  color: rgb(59, 70, 75);
+  margin-bottom: 0;
+}
+
+.pv-landing-gallery-subtitle {
+  font-size: 18px;
+  font-family: "sofia-pro";
+  color: rgba(59, 70, 75, 0.502);
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: 0px;
+}
+
+.pv-landing-gallery-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 55px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: -15px;
+}
+
+.pv-landing-gallery-app {
+  display: block;
+  flex: 1 1 250px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 25px;
+}
+
+.pv-landing-gallery-app:hover {
+  text-decoration: none;
+}
+
+.pv-landing-gallery-app > span {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 18px;
+  font-family: "sofia-pro";
+  font-weight: 500;
+  color: rgb(71, 143, 204);
+  margin: 0px;
+  text-decoration: none;
+}
+
+.pv-landing-gallery-app span > img, .pv-landing-gallery-app span > div {
+  width: 62px;
+  height: 62px;
+  border: 1px solid #f1f1f1;
+  border-radius: 30px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.pv-landing-gallery-app > p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: "sofia-pro";
+  color: rgba(59, 70, 75, 0.702);
+}
+
+.pt-button.pv-landing-gallery-loadmore {
+  margin-top: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
+}

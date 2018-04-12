@@ -1,0 +1,50 @@
+.pt-menu.pv-filelist {
+  background: none;
+  padding: 0;
+}
+
+.pt-menu.pv-filelist .pt-menu-header {
+  margin: 15px;
+}
+
+.pt-menu.pv-filelist .pt-menu-item {
+  padding: 10px 15px;
+  border-radius: 0px;
+  font-size: 16px;
+  font-family: "proxima-nova";
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.pt-menu.pv-filelist .pt-menu-item.pt-active {
+  padding-left: 11px; /* because of the border */
+  border-left: 4px solid #478fcc;
+}
+
+.pv-filelist-popup {
+  padding: 20px;
+}
+
+.pv-filelist-popup-title {
+  font-size: 16px;
+  font-family: "sofia-pro";
+  color: rgb(59, 70, 75);
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+
+.pv-filelist-create-button {
+  margin-left: 10px;
+}
+
+.pv-filelist-fileitem .pv-filelist-fileitem-dropdown {
+  visibility: hidden;
+}
+
+.pv-filelist-fileitem:hover .pv-filelist-fileitem-dropdown {
+  visibility: visible;
+}
+
+.pt-menu.pv-filelist-fileitem-menu .pt-menu-item {
+  font-family: "sofia-pro";
+}

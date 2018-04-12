@@ -1,0 +1,175 @@
+.pv-landing-getstarted {
+  background-color: #3b464b;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pv-landing-getstarted .pv-landing-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.pv-landing-getstarted-title {
+  font-size: 36px;
+  font-family: "sofia-pro";
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 0px;
+}
+
+.pv-landing-getstarted-subtitle {
+  font-size: 21px;
+  font-family: "sofia-pro";
+  color: rgba(255, 255, 255, 0.502);
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.pv-landing-getstarted-templates-title {
+  font-size: 21px;
+  font-family: "sofia-pro";
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 65px;
+  margin-bottom: 0px;
+}
+
+.pv-landing-getstarted-templates {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 30px -15px -15px -15px;
+}
+
+.pv-landing-getstarted-block {
+  flex: 1 1 183px;
+  padding: 45px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 15px;
+  border: 2px solid #767e81;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.pv-landing-getstarted-block:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pv-landing-getstarted-block.active {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.pv-landing-getstarted-block .icon {
+  height: 65px;
+  width: 65px;
+  position: relative;
+  display: inline-block;
+}
+
+.pv-landing-getstarted-block .icon:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.pv-landing-getstarted-block .icon object {
+  height: 100%;
+  weight: 100%;
+}
+
+.pv-landing-getstarted-block .name {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "sofia-pro";
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.pv-landing-getstarted-block.active .name {
+  color: #3b464b;
+}
+
+.pv-landing-getstarted-frameworks-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 0px;
+  width: 100%;
+}
+
+.pv-landing-getstarted-frameworks-title {
+  font-size: 21px;
+  font-family: "sofia-pro";
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 65px;
+  margin-bottom: 0px;
+}
+
+.pv-landing-getstarted-frameworks {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 30px -15px -15px -15px;
+}
+
+.pv-landing-getstarted-github-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 65px;
+  width: 100%;
+}
+
+.pv-landing-getstarted-github-title {
+  font-size: 21px;
+  font-family: "sofia-pro";
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.pt-input.pv-landing-getstarted-github-input {
+  margin-top: 45px;
+  width: 100%;
+}
+
+.pv-landing-getstarted-github-input-error {
+  font-size: 15px;
+  font-family: "sofia-pro";
+  font-weight: 300;
+  color: #F55656;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.pt-button.pv-landing-getstarted-startbuildng {
+  margin-top: 70px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.pv-landing-getstarted-buttongroup {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.pv-landing-getstarted-buttongroup button {
+  margin-left: 10px;
+  margin-right: 10px;
+}

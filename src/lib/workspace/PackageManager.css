@@ -1,0 +1,46 @@
+.pv-packagemanager {
+  width: 100%;
+  overflow-y: scroll;
+  background-color: #485358;
+  font-family: "sofia-pro";
+}
+
+.pv-packagemanager table {
+  width: 100%;
+  font-size: 16px;
+}
+
+.pv-packagemanager table.pt-table td {
+  vertical-align: middle;
+}
+
+.pv-packagemanager-col-name {
+  width: 200px;
+}
+
+.pv-packagemanager-col-version {
+  width: 60%;
+}
+
+.pv-packagemanager-col-action {
+  width: auto;
+}
+
+.pv-packagemanager-add-dropdown {
+  width: 400px;
+  font-family: "sofia-pro";
+}
+
+.pv-packagemanager-add-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.pv-packagemanager-add-description {
+  width: 100%;
+}
+
+.pv-packagemanager-remove-tooltip {
+  margin: 0px;
+  width: 300px;
+}

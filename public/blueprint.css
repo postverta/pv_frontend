@@ -1,0 +1,250 @@
+/* Customizations to blueprint's default CSS */
+.pt-button {
+  border-radius: 17px;
+  min-width: 34px;
+  min-height: 34px;
+  line-height: 34px;
+  font-family: "sofia-pro";
+  font-weight: 500;
+  padding: 0 17px;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+.pt-button.pt-large {
+  border-radius: 25px;
+  min-height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  padding: 0 25px;
+}
+
+.pt-button:not([class*="pt-intent-"]) {
+  color: rgb(77, 86, 90);
+  background-color: #f1f1f1;
+}
+
+.pt-button:not([class*="pt-intent-"])[class*="pt-icon-"]::before {
+  color: rgb(77, 86, 90);
+}
+
+.pt-dark .pt-button:not([class*="pt-intent-"]) {
+  color: #ffffff; /* TBD */
+  background-color: #f1f1f1; /* TBD */
+}
+
+.pt-dark .pt-button:not([class*="pt-intent-"])[class*="pt-icon-"]::before {
+  color: #ffffff; /* TBD */
+}
+
+.pt-button.pt-intent-primary {
+  color: #ffffff;
+  background-color: #478fcc;
+}
+
+.pt-button.pt-intent-success {
+  color: #ffffff;
+  background-color: #23cf5f;
+}
+
+.pt-button.pt-intent-warning {
+  color: #ffffff;
+  background-color: #f5812f;
+}
+
+.pt-button.pt-intent-error {
+  color: #ffffff;
+  background-color: #e03c36;
+}
+
+.pt-button:[class*="pt-intent-"][class*="pt-icon-"]::before {
+  color: #ffffff;
+}
+
+.pt-button.pt-outline {
+  background-color: transparent;
+  background-image: none;
+  min-height: 30px; /* because of the border */
+  line-height: 30px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 0 15px; /* because of the border */
+}
+
+.pt-button.pt-large.pt-outline {
+  min-height: 46px; /* because of the border */
+  line-height: 46px;
+  padding: 0 23px; /* because of the border */
+}
+
+.pt-button.pt-outline:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.pt-button.pt-outline:not([class*="pt-intent-"]) {
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0); /* TBD */
+}
+
+.pt-button.pt-outline:not([class*="pt-intent-"])[class*="pt-icon-"]::before {
+  color: rgb(0, 0, 0);
+}
+
+.pt-dark .pt-button.pt-outline:not([class*="pt-intent-"]) {
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
+.pt-dark .pt-button.pt-outline:not([class*="pt-intent-"])[class*="pt-icon-"]::before {
+  color: rgb(255, 255, 255);
+}
+
+.pt-button.pt-outline.pt-intent-primary {
+  color: #478fcc;
+  border-color: #478fcc;
+}
+
+.pt-button.pt-outline.pt-intent-primary:[class*="pt-icon-"]::before {
+  color: #478fcc;
+}
+
+.pt-button.pt-outline.pt-intent-success {
+  color: #23cf5f;
+  border-color: #23cf5f;
+}
+
+.pt-button.pt-outline.pt-intent-success:[class*="pt-icon-"]::before {
+  color: #23cf5f;
+}
+
+.pt-button.pt-outline.pt-intent-warning {
+  color: #f5812f;
+  border-color: #f5812f;
+}
+
+.pt-button.pt-outline.pt-intent-warning:[class*="pt-icon-"]::before {
+  color: #f5812f;
+}
+
+.pt-button.pt-outline.pt-intent-error {
+  color: #e03c36;
+  border-color: #e03c36;
+}
+
+.pt-button.pt-outline.pt-intent-error:[class*="pt-icon-"]::before {
+  color: #e03c36;
+}
+
+.pt-button.pt-minimal {
+  background: transparent;
+}
+
+.pt-input {
+  box-shadow: none !important;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  font-size: 14px;
+  font-family: "sofia-pro";
+  color: rgb(59, 70, 75);
+  padding: 0px 20px;
+  background-color: #f1f1f1;
+}
+
+.pt-input.pt-large {
+  height: 65px;
+  border-radius: 32px;
+  line-height: 65px;
+  font-size: 18px;
+  padding: 0px 40px;
+}
+
+.pt-input-group .pt-button {
+  min-height: 20px;
+  line-height: 20px;
+  margin: 10px;
+  font-weight: 700px;
+  font-size: 10px;
+  padding: 0 10px;
+}
+
+.pt-dark {
+  color: #ffffff;
+}
+
+.pt-dark .pt-button.pt-minimal {
+  background-color: transparent;
+}
+
+.pt-dark .pt-button.pt-outline {
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  border: solid 2px #f5f8fa;
+}
+
+.pt-dark .pt-button.pt-outline.pt-disabled {
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  border: solid 2px #596266;
+}
+
+.pt-dark .pt-button.pt-outline:hover {
+  box-shadow: none;
+  background-clip:border-box;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pt-navbar {
+  box-shadow: none;
+  padding: 0 20px;
+}
+
+.pt-navbar-heading {
+  font-size: 21px;
+  font-family: "sofia-pro";
+}
+
+.pt-dark .pt-navbar {
+  box-shadow: none;
+  background-color: #3b464b;
+}
+
+.pt-card {
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.03);
+}
+
+.pt-dark .pt-card {
+  background-color: #485358;
+}
+
+.pt-popover .pt-popover-content {
+  background-color: #fbfbfb;
+}
+
+.pt-dialog {
+  background-color: #fbfbfb;
+}
+
+.pt-dialog-header {
+  box-shadow: none;
+  background: none;
+  min-height: 60px;
+  font-size: 16px;
+  font-family: "sofia-pro";
+  color: rgb(59, 70, 75);
+  font-weight: 600;
+}
+
+.pt-dialog-body {
+  margin-top: 0;
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: "sofia-pro";
+  color: rgb(59, 70, 75);
+}

@@ -1,0 +1,94 @@
+.pv-menubar {
+  height: 78px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.pv-menubar .pv-menubar-name.pt-button.pt-minimal {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.pv-menubar .pv-menubar-appstate.pt-button.pt-minimal {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.pv-menubar-name-dropdown {
+  width: 425px;
+  padding: 24px;
+}
+
+.pv-menubar-name-dropdown-firstrow {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.pv-menubar-name-dropdown-icon {
+  flex: 0 0 auto;
+  height: 66px;
+  width: 66px;
+  border-radius: 33px;
+  border: 1px solid #f1f1f1;
+  overflow: hidden;
+}
+
+.pv-menubar-name-dropdown-icon > * {
+  object-fit: cover;
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.pv-menubar-name-dropdown-icon > div, .pv-menubar-name-dropdown-icon > img {
+  pointer-events: none;
+}
+
+.pv-menubar-name-dropdown-icon > label {
+  cursor: pointer;
+  background-color: transparent;
+  margin-top: -64px;
+}
+
+.pv-menubar-name-dropdown-icon > label:hover {
+  background-color: rgba(0,0,0, 0.3);
+}
+
+.pv-menubar-name-dropdown-icon input {
+  display: none;
+}
+
+.pv-menubar-name-dropdown-nameblock {
+  flex: 1 1 auto;
+  margin-left: 20px;
+}
+
+.pv-menubar-name-dropdown-label {
+  font-size: 16px;
+  font-family: "sofia-pro";
+  color: rgb(59, 70, 75);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.pv-menubar-name-dropdown-label:not(:first-child) {
+  margin-top: 20px;
+}
+
+.pv-menubar-name-dropdown-nameerror {
+  display: block;
+  font-family: "sofia-pro";
+  color: #DB3737;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.pv-menubar-logo {
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+}
+
+.pv-menubar-appstate {
+  pointer-events:none;
+}

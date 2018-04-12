@@ -1,0 +1,569 @@
+.pv-markdownviewer {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #485358;
+}
+
+.pv-markdownviewer-menubar {
+  flex: 0 0 auto;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pv-markdownviewer-markdown {
+  padding: 45px;
+  min-width: 200px;
+  max-width: 980px;
+  overflow-y: scroll;
+  font-family: "sofia-pro";
+  font-weight: 200;
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .pv-markdownviewer-markdown {
+    padding: 15px;
+  }
+}
+
+.pv-markdownviewer-markdown a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+.pv-markdownviewer-markdown a:active,
+.pv-markdownviewer-markdown a:hover {
+  outline-width: 0;
+}
+
+.pv-markdownviewer-markdown strong {
+  font-weight: inherit;
+}
+
+.pv-markdownviewer-markdown strong {
+  font-weight: bolder;
+}
+
+.pv-markdownviewer-markdown h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.pv-markdownviewer-markdown img {
+  border-style: none;
+}
+
+.pv-markdownviewer-markdown svg:not(:root) {
+  overflow: hidden;
+}
+
+.pv-markdownviewer-markdown code,
+.pv-markdownviewer-markdown kbd,
+.pv-markdownviewer-markdown pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.pv-markdownviewer-markdown hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.pv-markdownviewer-markdown input {
+  font: inherit;
+  margin: 0;
+}
+
+.pv-markdownviewer-markdown input {
+  overflow: visible;
+}
+
+.pv-markdownviewer-markdown [type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.pv-markdownviewer-markdown * {
+  box-sizing: border-box;
+}
+
+.pv-markdownviewer-markdown input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.pv-markdownviewer-markdown a {
+  color: #478fcc;
+  text-decoration: none;
+}
+
+.pv-markdownviewer-markdown a:hover {
+  text-decoration: underline;
+}
+
+.pv-markdownviewer-markdown strong {
+  font-weight: 600;
+}
+
+.pv-markdownviewer-markdown hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pv-markdownviewer-markdown hr::before {
+  display: table;
+  content: "";
+}
+
+.pv-markdownviewer-markdown hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.pv-markdownviewer-markdown table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.pv-markdownviewer-markdown td,
+.pv-markdownviewer-markdown th {
+  padding: 0;
+}
+
+.pv-markdownviewer-markdown h1,
+.pv-markdownviewer-markdown h2,
+.pv-markdownviewer-markdown h3,
+.pv-markdownviewer-markdown h4,
+.pv-markdownviewer-markdown h5,
+.pv-markdownviewer-markdown h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.pv-markdownviewer-markdown h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.pv-markdownviewer-markdown h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.pv-markdownviewer-markdown h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.pv-markdownviewer-markdown h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pv-markdownviewer-markdown h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pv-markdownviewer-markdown h6 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pv-markdownviewer-markdown p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.pv-markdownviewer-markdown blockquote {
+  margin: 0;
+}
+
+.pv-markdownviewer-markdown ul,
+.pv-markdownviewer-markdown ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.pv-markdownviewer-markdown ol ol,
+.pv-markdownviewer-markdown ul ol {
+  list-style-type: lower-roman;
+}
+
+.pv-markdownviewer-markdown ul ul ol,
+.pv-markdownviewer-markdown ul ol ol,
+.pv-markdownviewer-markdown ol ul ol,
+.pv-markdownviewer-markdown ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.pv-markdownviewer-markdown dd {
+  margin-left: 0;
+}
+
+.pv-markdownviewer-markdown code {
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.pv-markdownviewer-markdown pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.pv-markdownviewer-markdown::before {
+  display: table;
+  content: "";
+}
+
+.pv-markdownviewer-markdown::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.pv-markdownviewer-markdown>*:first-child {
+  margin-top: 0 !important;
+}
+
+.pv-markdownviewer-markdown>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.pv-markdownviewer-markdown a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pv-markdownviewer-markdown .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+}
+
+.pv-markdownviewer-markdown .anchor:focus {
+  outline: none;
+}
+
+.pv-markdownviewer-markdown p,
+.pv-markdownviewer-markdown blockquote,
+.pv-markdownviewer-markdown ul,
+.pv-markdownviewer-markdown ol,
+.pv-markdownviewer-markdown dl,
+.pv-markdownviewer-markdown table,
+.pv-markdownviewer-markdown pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.pv-markdownviewer-markdown hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0;
+}
+
+.pv-markdownviewer-markdown blockquote {
+  padding: 0 1em;
+  color: #ffffff;
+  border-left: 0.25em solid rgba(255, 255, 255, 0.5);
+}
+
+.pv-markdownviewer-markdown blockquote>:first-child {
+  margin-top: 0;
+}
+
+.pv-markdownviewer-markdown blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.pv-markdownviewer-markdown kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+}
+
+.pv-markdownviewer-markdown h1,
+.pv-markdownviewer-markdown h2,
+.pv-markdownviewer-markdown h3,
+.pv-markdownviewer-markdown h4,
+.pv-markdownviewer-markdown h5,
+.pv-markdownviewer-markdown h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.pv-markdownviewer-markdown h1:hover .anchor,
+.pv-markdownviewer-markdown h2:hover .anchor,
+.pv-markdownviewer-markdown h3:hover .anchor,
+.pv-markdownviewer-markdown h4:hover .anchor,
+.pv-markdownviewer-markdown h5:hover .anchor,
+.pv-markdownviewer-markdown h6:hover .anchor {
+  text-decoration: none;
+}
+
+.pv-markdownviewer-markdown h1:hover .anchor .octicon-link,
+.pv-markdownviewer-markdown h2:hover .anchor .octicon-link,
+.pv-markdownviewer-markdown h3:hover .anchor .octicon-link,
+.pv-markdownviewer-markdown h4:hover .anchor .octicon-link,
+.pv-markdownviewer-markdown h5:hover .anchor .octicon-link,
+.pv-markdownviewer-markdown h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.pv-markdownviewer-markdown h1 {
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pv-markdownviewer-markdown h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pv-markdownviewer-markdown h3 {
+  font-size: 1.25em;
+}
+
+.pv-markdownviewer-markdown h4 {
+  font-size: 1em;
+}
+
+.pv-markdownviewer-markdown h5 {
+  font-size: 0.875em;
+}
+
+.pv-markdownviewer-markdown h6 {
+  font-size: 0.85em;
+}
+
+.pv-markdownviewer-markdown ul,
+.pv-markdownviewer-markdown ol {
+  padding-left: 2em;
+}
+
+.pv-markdownviewer-markdown ul ul,
+.pv-markdownviewer-markdown ul ol,
+.pv-markdownviewer-markdown ol ol,
+.pv-markdownviewer-markdown ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.pv-markdownviewer-markdown li>p {
+  margin-top: 16px;
+}
+
+.pv-markdownviewer-markdown li+li {
+  margin-top: 0.25em;
+}
+
+.pv-markdownviewer-markdown dl {
+  padding: 0;
+}
+
+.pv-markdownviewer-markdown dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.pv-markdownviewer-markdown dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.pv-markdownviewer-markdown table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+.pv-markdownviewer-markdown table th {
+  font-weight: 600;
+}
+
+.pv-markdownviewer-markdown table th,
+.pv-markdownviewer-markdown table td {
+  padding: 6px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pv-markdownviewer-markdown table tr {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.pv-markdownviewer-markdown table tr:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.pv-markdownviewer-markdown img {
+  max-width: 100%;
+  box-sizing: content-box;
+}
+
+.pv-markdownviewer-markdown img[align=right] {
+  padding-left: 20px;
+}
+
+.pv-markdownviewer-markdown img[align=left] {
+  padding-right: 20px;
+}
+
+.pv-markdownviewer-markdown code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(255, 255, 255,0.05);
+  border-radius: 3px;
+}
+
+.pv-markdownviewer-markdown code::before,
+.pv-markdownviewer-markdown code::after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.pv-markdownviewer-markdown pre {
+  word-wrap: normal;
+}
+
+.pv-markdownviewer-markdown pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.pv-markdownviewer-markdown .highlight {
+  margin-bottom: 16px;
+}
+
+.pv-markdownviewer-markdown .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.pv-markdownviewer-markdown .highlight pre,
+.pv-markdownviewer-markdown pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: rgba(255, 255, 255,0.05);
+  border-radius: 3px;
+}
+
+.pv-markdownviewer-markdown pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.pv-markdownviewer-markdown pre code::before,
+.pv-markdownviewer-markdown pre code::after {
+  content: normal;
+}
+
+.pv-markdownviewer-markdown kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+
+/*
+.pv-markdownviewer-markdown table {
+  border-collapse: collapse;
+  border: 1px solid #738694;
+}
+
+.pv-markdownviewer-markdown th {
+  border: 1px solid #738694;
+}
+
+.pv-markdownviewer-markdown td {
+  border: 1px solid #738694;
+}
+
+.pv-markdownviewer-markdown h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.pv-markdownviewer-markdown h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.pv-markdownviewer-markdown h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.pv-markdownviewer-markdown h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.pv-markdownviewer-markdown h5 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.pv-markdownviewer-markdown h6 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.pv-markdownviewer-markdown img {
+  max-width: 100%;
+}*/

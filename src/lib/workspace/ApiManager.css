@@ -1,0 +1,62 @@
+.pv-apimanager {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: #485358;
+}
+
+.pv-apimanager-apiblock {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 10px;
+}
+
+.pv-apimanager-apiblock-log {
+  width: 64px;
+  height: 64px;
+}
+
+.pv-apimanager-apiblock-nameblock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pv-apimanager-apiblock-name {
+  margin-top: 10px;
+}
+
+.pt-control.pt-large.pt-switch.pv-apimanager-apiblock-switch {
+  margin-left: 10px;
+  padding-left: 32px;
+  margin-bottom: 0px;
+}
+
+.pv-apimanager-apiblock-description {
+  max-width: 280px;
+  height: 40px;
+}
+
+.pv-apimanager-apiblock-button-container {
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-top: 10px;
+}
+
+.pv-apimanager-apiblock-button-container button {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.pv-apimanager-apiblock-button-container a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.pv-apimanager-apiblock-codedialog {
+  width: 600px;
+}

@@ -1,0 +1,79 @@
+.pv-landing-intro {
+  width: inherit;
+  flex: 0 0 auto;
+  padding-bottom: 100px;
+  background-color: #fbfbfb;
+}
+
+.pv-landing-intro .pv-landing-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 980px;
+}
+
+.pv-landing-demo-video {
+  margin-top: -200px;
+  max-width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(59, 70, 75);
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+.pv-landing-intro-title {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 36px;
+  font-family: "sofia-pro";
+  font-weight: 300;
+  color: rgb(59, 70, 75);
+}
+
+.pv-landing-intro-features {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 50px;
+  margin: -15px;
+}
+
+.pv-landing-intro-feature {
+  flex: 1 1 400px;
+  padding: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 15px;
+}
+
+.pv-landing-intro-feature .title-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.pv-landing-intro-feature .icon {
+  height: 65px;
+  width: 65px;
+}
+
+.pv-landing-intro-feature .icon object {
+  width: 100%;
+  height: 100%;
+}
+
+.pv-landing-intro-feature .title {
+  margin-left: 30px;
+  font-size: 24px;
+  font-family: "sofia-pro";
+  color: rgb(71, 143, 204);
+}
+
+.pv-landing-intro-feature .content {
+  margin-top: 25px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-family: "sofia-pro";
+  color: rgba(59, 70, 75, 0.702);
+  line-height: 1.375;
+  text-align: left;
+}

@@ -1,0 +1,33 @@
+.pv-landing-footer {
+  width: inherit;
+  height: 100px;
+  flex: 1 0 auto;
+  background-color: #fbfbfb;
+}
+
+.pv-landing-footer .pv-landing-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pv-landing-footer .pv-landing-container span {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.pv-landing-footer-left {
+  font-size: 16px;
+  font-family: "sofia-pro";
+  color: rgb(71, 143, 204);
+}
+
+.pv-landing-footer-copyright {
+  font-size: 16px;
+  font-family: "sofia-pro";
+  color: rgba(59, 70, 75, 0.502);
+}

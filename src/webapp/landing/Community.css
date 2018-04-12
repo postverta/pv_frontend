@@ -1,0 +1,38 @@
+.pv-landing-community {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: -moz-linear-gradient( -90deg, rgb(21,186,211) 0%, rgb(71,143,204) 100%);
+  background-image: -webkit-linear-gradient( -90deg, rgb(21,186,211) 0%, rgb(71,143,204) 100%);
+  background-image: -ms-linear-gradient( -90deg, rgb(21,186,211) 0%, rgb(71,143,204) 100%);
+}
+
+.pv-landing-community .pv-landing-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  max-width: 980px;
+}
+
+.pv-landing-community-title {
+  text-align: center;
+  font-size: 36px;
+  font-family: "sofia-pro";
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.pv-landing-community-subtitle {
+  font-size: 18px;
+  font-family: "sofia-pro";
+  color: rgba(255, 255, 255, 0.502);
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.pt-button.pv-landing-community-visit {
+  margin-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}

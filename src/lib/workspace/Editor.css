@@ -1,0 +1,185 @@
+.pv-editor {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.pv-editor-container {
+  width: 100%;
+  min-height: 0;
+}
+
+.pv-editor .CodeMirror {
+  height: 100%;
+  width:inherit;
+}
+
+.cm-s-postverta.CodeMirror pre {
+  box-shadow: none;
+  line-height: 1.4;
+}
+
+.cm-s-postverta.CodeMirror { background: #485358; color: #ffffff; font-size: 16px;}
+.cm-s-postverta div.CodeMirror-selected { background: rgba(255, 255, 255, 0.2); }
+.cm-s-postverta .CodeMirror-line::selection, .cm-s-postverta .CodeMirror-line > span::selection, .cm-s-postverta .CodeMirror-line > span > span::selection { background: rgba(255, 255, 255, .2); }
+.cm-s-postverta .CodeMirror-line::-moz-selection, .cm-s-postverta .CodeMirror-line > span::-moz-selection, .cm-s-postverta .CodeMirror-line > span > span::-moz-selection { background: rgba(255, 255, 255, .2); }
+.cm-s-postverta .CodeMirror-gutters { background: #485358; border-right: 1px solid #3f494d;}
+.cm-s-postverta .CodeMirror-guttermarker { color: white; }
+.cm-s-postverta .CodeMirror-guttermarker-subtle { color: #d0d0d0; }
+.cm-s-postverta .CodeMirror-linenumber { color: rgba(255, 255, 255, 0.5); font-size: 16px; font-family: "sofia-pro"; font-weight: 200; }
+.cm-s-postverta .CodeMirror-cursor { border-left: 1px solid #f8f8f0; }
+
+.cm-s-postverta span.cm-comment { color: #f6d13f; }
+.cm-s-postverta span.cm-atom { color: #f68d43; }
+.cm-s-postverta span.cm-number { color: #f68d43; }
+
+.cm-s-postverta span.cm-property, .cm-s-postverta span.cm-attribute { color: #6caadf; }
+.cm-s-postverta span.cm-keyword { color: #ff7a7a; }
+.cm-s-postverta span.cm-builtin { color: #ffffff; }
+.cm-s-postverta span.cm-string { color: #23cf5f; }
+
+.cm-s-postverta span.cm-variable { color: #f8f8f2; }
+.cm-s-postverta span.cm-variable-2 { color: #9effff; }
+.cm-s-postverta span.cm-variable-3, .cm-s-postverta span.cm-type { color: #66d9ef; }
+.cm-s-postverta span.cm-def { color: #f68d43; }
+.cm-s-postverta span.cm-bracket { color: #ffffff; }
+.cm-s-postverta span.cm-tag { color: #ff7a7a; }
+.cm-s-postverta span.cm-header { color: #ae81ff; }
+.cm-s-postverta span.cm-link { color: #ae81ff; }
+.cm-s-postverta span.cm-error { background: #e03c36; color: #ffffff; }
+
+.cm-s-postverta .CodeMirror-activeline-background { background: rgba(255, 255, 255, .05); }
+.cm-s-postverta .CodeMirror-activeline-gutter { background: rgba(255, 255, 255, .05); }
+.cm-s-postverta .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
+
+.CodeMirror-hints {
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 2px;
+  border-radius: 2px;
+  border: 1px solid silver;
+  background: #2a3134;
+  font-family: monospace;
+  width: 300px;
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: 15px;
+}
+
+.CodeMirror-hint {
+  margin: 0px;
+  padding: 0 4px;
+  border-radius: 2px;
+  white-space: pre;
+  color: white;
+  cursor: pointer;
+}
+
+li.CodeMirror-hint-active {
+  background: #2f618a;
+}
+
+li.CodeMirror-hint {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+li.CodeMirror-hint b {
+  color: #57b6ff;
+}
+
+li.CodeMirror-hint .icon {
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+	height: 16px;
+	width: 16px;
+}
+
+li.CodeMirror-hint .icon { background-image: url('./suggest_icons/Misc_inverse_16x.svg'); }
+li.CodeMirror-hint .icon.method,
+li.CodeMirror-hint .icon.function,
+li.CodeMirror-hint .icon.constructor { background-image: url('./suggest_icons/Method_inverse_16x.svg'); }
+li.CodeMirror-hint .icon.field       { background-image: url('./suggest_icons/Field_inverse_16x.svg'); }
+li.CodeMirror-hint .icon.variable 			{ background-image: url('suggest_icons/LocalVariable_16x_vscode_inverse.svg'); }
+li.CodeMirror-hint .icon.class 				{ background-image: url('suggest_icons/Class_inverse_16x.svg'); }
+li.CodeMirror-hint .icon.interface 			{ background-image: url('suggest_icons/Interface_inverse_16x.svg'); }
+li.CodeMirror-hint .icon.module 				{ background-image: url('suggest_icons/Namespace_inverse_16x.svg'); }
+li.CodeMirror-hint .icon.property { background-image: url('suggest_icons/Property_inverse_16x.svg'); }
+li.CodeMirror-hint .icon.unit		 			{ background-image: url('suggest_icons/Ruler_inverse_16x.svg'); }
+li.CodeMirror-hint .icon.value,
+li.CodeMirror-hint .icon.enum		 			{ background-image: url('suggest_icons/Enumerator_inverse_16x.svg'); }
+li.CodeMirror-hint .icon.keyword	 			{ background-image: url('suggest_icons/IntelliSenseKeyword_inverse_16x.svg'); }
+li.CodeMirror-hint .icon.snippet		 		{ background-image: url('suggest_icons/Snippet_inverse_16x.svg'); }
+li.CodeMirror-hint .icon.text		 			{ background-image: url('suggest_icons/String_inverse_16x.svg'); }
+li.CodeMirror-hint .icon.color		 		{ background-image: url('suggest_icons/ColorPalette_inverse_16x.svg'); }
+li.CodeMirror-hint .icon.file		 			{ background-image: url('suggest_icons/Document_inverse_16x.svg'); }
+li.CodeMirror-hint .icon.reference	 		{ background-image: url('suggest_icons/ImportFile_16x_vscode_inverse.svg'); }
+
+.CodeMirror-hints-details {
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  border-radius: 2px;
+  border: 1px solid silver;
+  background: #2a3134;
+  font-family: monospace;
+  overflow-y: auto;
+  font-size: 15px;
+  width: 400px;
+  max-height: 200px;
+}
+
+.CodeMirror-hints-details .detail {
+  word-wrap: break-word;
+  color: silver;
+}
+
+.CodeMirror-hints-details .documentation {
+  color: white;
+}
+
+.CodeMirror-diagnostics-error {
+  position: relative;
+}
+
+.CodeMirror-diagnostics-error::before {
+  content: "";
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  height: 0.25em;
+  background: linear-gradient(135deg, transparent, transparent 45%, #e03c36, transparent 55%, transparent 100%),
+              linear-gradient(45deg, transparent, transparent 45%, #e03c36, transparent 55%, transparent 100%);
+  background-size: 0.5em 0.5em;
+  background-repeat: repeat-x, repeat-x;
+}
+
+.CodeMirror-diagnostics-warning {
+  position: relative;
+}
+
+.CodeMirror-diagnostics-warning::before {
+  content: "";
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  height: 0.25em;
+  background: linear-gradient(135deg, transparent, transparent 45%, #f5812f, transparent 55%, transparent 100%),
+              linear-gradient(45deg, transparent, transparent 45%, #f5812f, transparent 55%, transparent 100%);
+  background-size: 0.5em 0.5em;
+  background-repeat: repeat-x, repeat-x;
+}

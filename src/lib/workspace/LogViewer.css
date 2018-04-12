@@ -1,0 +1,75 @@
+.pv-logviewer {
+  height: inherit;
+  display: flex;
+  flex-flow: column;
+}
+
+.pv-logviewer-body {
+  flex: 1 1 auto;
+  overflow-y: scroll;
+  background-color: #485358;
+}
+
+.pv-logviewer-button-margin {
+  margin-right: 10px;
+}
+
+.pv-logviewer ul {
+  list-style: none;
+  font-family: monospace;
+  font-size: 14px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.pv-logviewer li {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.pv-logviewer li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pv-logviewer-logentry {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+}
+
+.pv-logviewer-logentry-cmd {
+  color: #8A9BA8;
+  flex: 0 0 auto;
+  margin-right: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.pv-logviewer-logentry-runtime {
+  flex: 1 1 auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.pv-logviewer-logentry-dependency {
+  color: #8A9BA8;
+  font-style: italic;
+  flex: 1 1 auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.pv-logviewer-logentry-supp {
+  color: rgba(255, 255, 255, 0.5);
+  flex: 0 0 auto;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-left: 20px;
+}
